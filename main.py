@@ -1,5 +1,5 @@
 class Asiento:
-	
+
     def __init__(self, color, precio, registro):
         self.color = color
         self.precio = precio
@@ -17,17 +17,18 @@ class Motor:
         self.registro = registro
 
     def asignarTipo (self, tipo):
-        if (tipo == "gasolina" or tipo == "electrico"):
-            self.tipo = tipo
+    	if (tipo == "gasolina" or tipo == "electrico"):
+    		self.tipo = tipo
 
-   def cambiarRegistro(self, registro):
-        self.registro = registro
+    def cambiarRegistro(self, registro):
+    	self.registro = registro
 
 
 class Auto:
     cantidadCreados = 0
+
     def __init__(self, modelo, precio, asientos, marca, motor, registro):
-        self.modelo = modelo
+    	self.modelo = modelo
         self.precio = precio
         self.asientos = asientos
         self.marca = marca
@@ -35,7 +36,7 @@ class Auto:
         self.registro = registro
     
     def cantidadAsientos (self):
-        xAsientos = 0
+    	xAsientos = 0
         for i in self.asientos:
             if i != None:
                 xAsientos += 1
