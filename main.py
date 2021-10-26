@@ -34,11 +34,11 @@ class Auto:
         self.registro = registro
     
     def cantidadAsientos (self):
-        numAsientos = 
-        for asiento in self.asientos:
-            if (type(asiento) == Asiento):
-                numAsientos += 1
-        return numAsientos
+        xAsientos = 0
+        for i in self.asientos:
+            if i != None:
+                xAsientos += 1
+        return xAsientos
         
     def verificarIntegridad(self):
         if (self.registro == self.motor.registro):
